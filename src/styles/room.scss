@@ -14,6 +14,15 @@
     > img {
       max-height: 45px;
     }
+
+    > div {
+      display: flex;
+      gap: 16px;
+
+      button {
+        height: 40px;
+      }
+    }
   }
 
   main {
@@ -26,11 +35,11 @@
       align-items: center;
 
       h1 {
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         font-size: 24px;
         color: #29292e;
       }
-  
+
       span {
         margin-left: 16px;
         background: #e559f9;
@@ -49,7 +58,7 @@
         padding: 16px;
         border-radius: 8px;
         background: #fefefe;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
         resize: vertical;
         min-height: 130px;
       }
@@ -95,6 +104,34 @@
         }
       }
     }
+    .question-list {
+      margin-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+}
 
+.toast-span {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  
+  span {
+    text-align: center;
+  }
+
+  button {
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid #f34b2d;
+    color: #f34b2d;
+    cursor: pointer;
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
   }
 }
