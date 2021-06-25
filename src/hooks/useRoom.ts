@@ -44,6 +44,7 @@ export function useRoom(roomId: string) {
 
     roomRef.on('value', (room) => {
       const databaseRoom = room.val();
+      console.log(databaseRoom)
       const firebaseQuestions: FirebaseQuestions = databaseRoom.questions ?? {};
       const parsedQuestions = Object.entries(firebaseQuestions).map(
         ([key, value]) => {
